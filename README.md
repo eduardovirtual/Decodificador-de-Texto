@@ -2,6 +2,8 @@
 
 Nesse projeto, o desafio era desenvolver uma aplicação que criptografa textos, com o objetivo de trocar mensagens "secretas" com outras pessoas que saibam o segredo da criptografia utilizada.
 
+Diante desse desafio, pude aprimorar meus conhecimentos no Front-End como um todo, além de utilizar novas funções nunca antes utilizadas, focando no código limpo da melhor maneira possível!
+
 **As "chaves" de criptografia utilizadas são:**
 - A letra "e" é convertida para "enter"
 - A letra "i" é convertida para "imes"
@@ -16,9 +18,9 @@ Nesse projeto, o desafio era desenvolver uma aplicação que criptografa textos,
 A página contém campos de inserção de texto para então serem criptografados ou descriptografados, tudo que o usuário digitar, será exibido na tela!
 
 ## Demonstração
-(./assets-md/demonstracao.png)
+![demonstrativo do uso da aplicação](assets-md/demonstracao.png)
 
 ## Responsividade
 
 Além disso, o projeto conta com uma responsividade para diferentes dispositivos!
-(./assets-md/responsividade.png)
+![demonstrativo do uso da responsividade](assets-md/responsividade.png)
