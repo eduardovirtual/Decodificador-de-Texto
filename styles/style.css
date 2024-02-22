@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fonte: 'Montserrat', sans-serif;
+
+    --color-primaria: #332941;
+    --color-secundaria: #1601fd;
+    --color-btn1-footer: #864AF9;
+    --color-btn2-3: #8e62de;
+    --color-background: #864AF9;
+    --color-hover-botao1: #6f5e85;
+    --color-hover-botao2-3: #c0a1e8;
+}
+
+* {
+    font-family: var(--fonte);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    height: 100vh;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.principal {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.principal__conteudo {
+    display: flex;
+    width: 70%;
+    height: 90%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 2.5rem;
+}
+
+textarea {
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.principal__conteudo__areaDoTexto,
+.principal__conteudo__avisoEbotao {
+    margin-left: 12rem;
+}
+
+.principal__conteudo__areaDoTexto {
+    width: 60%;
+    border-radius: 0.5rem;
+}
+
+.principal__conteudo__areaDoTexto::placeholder,
+.principal__conteudo__areaDoTexto {
+    font-size: 2rem;
+    color: var(--color-primaria);
+    font-weight: 400;
+    background-color: var(--color-background);
+    max-height: 31rem;
+}
+
+.principal__conteudo__aviso {
+    display: flex;
+    gap: 0.5rem;
+    color: var(--color-secundaria);
+}
+
+.principal__conteudo__botoes {
+    display: flex;
+    gap: 2rem;
+}
+
+.principal__conteudo__btn1,
+.principal__conteudo__btn2,
+.conteudoLateral__btn3 {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    width: 35%;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.principal__conteudo__btn1 {
+    color: var(--color-btn1-footer);
+    background-color: var(--color-primaria);
+}
+
+.principal__conteudo__btn2,
+.conteudoLateral__btn3 {
+    color: var(--color-primaria);
+    background-color: var(--color-btn2-3);
+}
+
+.principal__conteudo__btn1:active {
+    background-color: var(--color-hover-botao1);
+}
+
+.principal__conteudo__btn2:active,
+.conteudoLateral__btn3:active {
+    background-color: var(--color-hover-botao2-3);
+}
+
+.conteudoLateral {
+    display: flex;
+    width: 34%;
+    height: 90%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudoLateral__saida {
+    width: 27rem;
+    height: 80%;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 1rem;
+    /* box-shadow:  20px 20px 60px #bebebe, */
+    /* -20px -20px 60px #ffffff; */
+}
+
+.conteudoLateral__textoImagem {
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    text-align: center;
+    width: 70%;
+}
+
+.conteudoLateral__img {
+    width: 100%;
+}
+
+.conteudoLateral__titulo__texto {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.conteudoLateral__paragrafo__texto {
+    color: var(--color-secundaria);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.conteudoLateral__btn3 {
+    visibility: hidden;
+    width: 2.5rem;
+}
+
+footer {
+    color: var(--color-btn1-footer);
+    background-color: var(--color-primaria);
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .principal {
+        flex-direction: column;
+        height: 95%
+    }
+
+    .principal__conteudo {
+        width: 90%;
+    }
+
+    .principal__conteudo__areaDoTexto,
+    .principal__conteudo__avisoEbotao {
+        margin-left: 2rem;
+        width: 100%;
+    }
+
+    .principal__conteudo__areaDoTexto {
+        max-height: 11rem;
+    }
+
+    .principal__conteudo__btn1,
+    .principal__conteudo__btn2 {
+        width: 50%;
+    }
+
+    .conteudoLateral,
+    .conteudoLateral__saida {
+        width: 100%
+    }
+
+    .conteudoLateral__img {
+        display: none;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .principal__conteudo__areaDoTexto,
+    .principal__conteudo__avisoEbotao {
+        margin: .5rem;
+    }
+
+    .principal__conteudo__areaDoTexto {
+        max-height: 9.5rem;
+    }
+}
