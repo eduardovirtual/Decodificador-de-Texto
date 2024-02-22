@@ -2,9 +2,10 @@
 
 Nesse projeto, o desafio era desenvolver uma aplicação que criptografa textos, com o objetivo de trocar mensagens "secretas" com outras pessoas que saibam o segredo da criptografia utilizada.
 
+**Para entender melhor sobre o funcionamento do projeto, basta acessar o link disponível na descrição do mesmo!**
+
 Diante desse desafio, pude aprimorar meus conhecimentos no Front-End como um todo, além de utilizar novas funções nunca antes utilizadas, focando no código limpo da melhor maneira possível!
 
-**Para entender melhor sobre o funcionamento do projeto, basta acessar o link disponível na descrição do mesmo!**
 
 **As "chaves" de criptografia utilizadas são:**
 - A letra "e" é convertida para "enter"
