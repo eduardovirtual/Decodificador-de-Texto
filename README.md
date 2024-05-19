@@ -27,3 +27,6 @@ A página contém campos de inserção de texto para então serem criptografados
 
 Além disso, o projeto conta com uma responsividade para diferentes dispositivos!
 ![demonstrativo do uso da responsividade](assets-md/responsividade.png)
+
+## Badge de conclusão do Challenge:
+![badge de conclusão do desafio](assets-md/badge-decodificador.png)
